@@ -1,10 +1,9 @@
-aElInput = document.querySelector("#aEl");
-bElInput = document.querySelector("#aEl");
-cElInput = document.querySelector("#aEl");
+elsoTelekOldal = document.querySelector("#elsoTelekOldal");
+masodikTelekOldal = document.querySelector("#masodikTelekOldal");
 szamolButton = document.querySelector("#button");
-terfogatKiszamitas = document.querySelector("#terfogat");
+teruletKiszamitas = document.querySelector("#terulet");
 
 szamolButton.addEventListener('click', () => {
-    let eredmeny = Number(aElInput.value) * Number(bElInput.value) * Number(cElInput.value);
-    terfogatKiszamitas.value = eredmeny;
+    let eredmeny = ( 3/2 * Math.pow(Number(elsoTelekOldal.value), 2) * Math.sqrt(3) ) + ( ( 3/2 * Math.pow(Number(masodikTelekOldal.value), 2) * Math.sqrt(3) ) / 2 );
+    teruletKiszamitas.value = eredmeny;
 });
